@@ -1,0 +1,5 @@
+#drcProvinceMap .territory-shape{fill:#a9c596;stroke:#fffdf7;stroke-width:.72;vector-effect:non-scaling-stroke;cursor:pointer;transition:fill .16s,opacity .16s,stroke-width .16s}
+#drcProvinceMap .territory-shape:hover,#drcProvinceMap .territory-shape:focus,#drcProvinceMap .territory-shape.active{fill:#f2bd55;stroke:#08251f;stroke-width:2;outline:0}
+#drcProvinceMap .territory-shape.muted{opacity:.24}
+
+@media(max-width:560px){#drcProvinceMap .territory-shape{stroke-width:.5}#drcProvinceMap .territory-shape:hover,#drcProvinceMap .territory-shape:focus,#drcProvinceMap .territory-shape.active{stroke-width:1.6}}

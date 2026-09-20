@@ -1,0 +1,13 @@
+{
+  "name": "mboka",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Jeu éducatif bilingue pour explorer la République démocratique du Congo.",
+  "scripts": {
+    "build": "node build.js",
+    "generate:music": "node generate-music-audio.js",
+    "generate:map": "node generate-province-map.js && node generate-territory-map.js",
+    "test": "node validate.js",
+    "start": "node server.js"
+  }
+}

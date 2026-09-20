@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071f1a">
+  <meta name="description" content="Mboka — jeu éducatif bilingue pour explorer la République démocratique du Congo.">
+  <title>Mboka — Explore la RDC</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lessons.css">
+  <link rel="stylesheet" href="lingala.css">
+  <link rel="stylesheet" href="achievements.css">
+  <link rel="stylesheet" href="history-timeline.css">
+  <link rel="stylesheet" href="kingdoms.css">
+  <link rel="stylesheet" href="presidency.css">
+  <link rel="stylesheet" href="heroes.css">
+  <link rel="stylesheet" href="communities.css">
+  <link rel="stylesheet" href="food.css">
+  <link rel="stylesheet" href="environment.css">
+  <link rel="stylesheet" href="resources.css">
+  <link rel="stylesheet" href="creativity.css">
+  <link rel="stylesheet" href="sprint.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="memory.css">
+  <link rel="stylesheet" href="memory-levels.css">
+  <link rel="stylesheet" href="i18n.css">
+  <link rel="stylesheet" href="teacher.css">
+  <link rel="stylesheet" href="class-mode.css">
+  <link rel="stylesheet" href="teacher-account.css">
+  <link rel="stylesheet" href="content-review.css">
+  <link rel="stylesheet" href="sources.css">
+  <link rel="stylesheet" href="provinces.css">
+  <link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="real-map.css">
+  <link rel="stylesheet" href="territories.css">
+  <link rel="stylesheet" href="levels.css">
+  <link rel="stylesheet" href="audio.css">
+  <link rel="stylesheet" href="daily.css">
+  <link rel="stylesheet" href="pwa.css">
+  <link rel="stylesheet" href="hardening.css">
+  <link rel="stylesheet" href="pilot.css">
+  <link rel="stylesheet" href="pilot-measure.css">
+  <link rel="stylesheet" href="pilot-dashboard.css">
+  <link rel="stylesheet" href="math.css">
+  <link rel="stylesheet" href="music-game.css">
+  <link rel="stylesheet" href="chess-game.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="teacher-account-responsive.css">
+  <link rel="stylesheet" href="curriculum.css">
+  <link rel="stylesheet" href="mission.css">
+  <link rel="stylesheet" href="digital-code.css">
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Aller au contenu principal</a>
+  <header class="topbar">
+    <a class="brand" href="#accueil" aria-label="Mboka, accueil"><span class="brand-mark">M</span><span>Mboka</span></a>
+    <nav class="primary-nav" aria-label="Navigation principale">
+      <a href="#explorer">Explorer</a><a href="#provinces">Provinces</a><a href="#math">Maths</a><a href="#musicLab">Musique</a><a href="#chessLab">Échecs</a><a href="#enseignants">Enseignants</a><a href="#histoire">Histoire</a>
+      <details class="pathway-menu"><summary>Parcours</summary><div><a href="#presidence">Citoyenneté</a><a href="#environnement">Environnement</a><a href="#ressources">Ressources responsables</a><a href="#numerique">Mboka Numérique</a></div></details>
+    </nav>
+    <div class="header-actions"><button class="teacher-account-button" id="teacherAccountButton">Compte enseignant</button><button class="install-button" id="installApp" hidden>Installer</button><label class="language-picker" aria-label="Langue"><span>◎</span><select id="languageSelect"><option value="fr">FR</option><option value="en">EN</option></select></label><label class="speech-rate-picker" id="speechRateLabel" aria-label="Vitesse de lecture"><select id="speechRate" aria-label="Vitesse de lecture" title="Vitesse de lecture"><option value="0.75">0,75×</option><option value="0.88">0,88×</option><option value="1">1×</option><option value="1.15">1,15×</option></select></label><button class="icon-button" id="soundToggle" title="Activer ou couper les sons" aria-label="Activer ou couper les sons">🔊</button><button class="profile" id="profileButton" aria-label="Ouvrir mon profil">KM</button></div>
+  </header>
+
+  <nav class="module-nav" aria-label="Accès rapide aux modules"><a href="#explorer">Découvrir</a><a href="#math">Maths</a><a href="#musicLab">Musique</a><a href="#chessLab">Échecs</a><a href="#quiz">Quiz</a><a href="#enseignants">Enseignants</a><a href="#presidence">Citoyenneté</a><a href="#environnement">Environnement</a><a href="#ressources">Ressources</a><a href="#numerique">Numérique</a><a href="#histoire">Histoire</a><a href="#sources">Sources</a></nav>
+
+  <main id="mainContent">
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <span class="eyebrow">L'aventure commence ici</span>
+        <h1>La RDC comme tu ne l'as <em>jamais explorée.</em></h1>
+        <p>Des rives du fleuve Congo aux sommets des Virunga, pars à la découverte d'un pays aux mille histoires.</p>
+        <div class="hero-actions hero-entry-points" aria-label="Choisir un parcours"><a class="button primary" href="#daily">Apprendre <span>→</span></a><a class="button secondary" href="#quiz">Jouer <span>★</span></a><a class="button secondary" href="#enseignants">Enseigner <span>✎</span></a></div>
+        <button class="explore-more" id="showAdvancedModules" type="button" aria-expanded="false" aria-controls="mainContent"><span>+</span> Explorer davantage</button>
+        <div class="trust"><div class="avatars" aria-hidden="true"><span>✓</span><span>★</span><span>◈</span><span>+</span></div><p><strong>Progression locale</strong><br>conservée sur cet appareil</p></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration d'une exploration de la République démocratique du Congo">
+        <div class="sun"></div><div class="mountain back"></div><div class="mountain front"></div>
+        <div class="river"></div><div class="tree t1">♠</div><div class="tree t2">♠</div><div class="tree t3">♠</div>
+        <div class="okapi"><span class="okapi-head">●</span><span class="okapi-body"></span><i></i><i></i><i></i><i></i></div>
+        <div class="fact-card"><span>LE SAVAIS-TU ?</span><strong>Le fleuve Congo est le plus profond du monde.</strong></div>
+      </div>
+      <div class="scroll-cue">DÉFILE POUR EXPLORER <span>↓</span></div>
+    </section>
+
+    <section class="mission-section" id="mission" aria-labelledby="missionTitle">
+      <div class="mission-heading"><span class="eyebrow">POURQUOI MBOKA</span><h2 id="missionTitle">Connaître son pays.<br>Mieux construire demain.</h2><p>Mboka relie culture, apprentissage et outils numériques pour accompagner les jeunes et les éducateurs de la RDC.</p></div>
+      <div class="mission-grid">
+        <article class="mission-card vision-card"><span>01 · VISION</span><h3>Une jeunesse qui connaît et comprend son pays.</h3><p>Permettre à chaque jeune Congolais de découvrir la RDC, ses cultures et son environnement grâce à une éducation numérique accessible, inclusive et contextualisée.</p></article>
+        <article class="mission-card"><span>02 · MISSION</span><h3>Transformer la découverte en apprentissage.</h3><p>Proposer aux élèves et enseignants des contenus fiables, des activités éducatives et des outils simples pour apprendre, enseigner et mesurer les progrès.</p></article>
+      </div>
+      <div class="commitment-list" aria-label="Nos engagements"><strong>NOS ENGAGEMENTS</strong><span>Identité congolaise</span><span>Accès inclusif</span><span>Sécurité des enfants</span><span>Exactitude et validation</span><span>Impact mesurable</span></div>
+    </section>
+
+    <section class="daily-section" id="daily">
+      <div class="daily-streak"><span class="streak-flame">🔥</span><div><small>SÉRIE ACTUELLE</small><strong><span id="dailyStreak">0</span> jour<span id="streakPlural">s</span></strong><p id="streakMessage">Apprends un fait aujourd’hui pour commencer ta série.</p></div></div>
+      <div class="daily-card"><div class="daily-label"><span>✦ DÉCOUVERTE DU JOUR</span><small id="dailyTopic">NATURE</small></div><h2 id="dailyFact"></h2><p id="dailyExplanation"></p><aside class="activity-pedagogy-card daily-pedagogy-card" aria-label="Fiche pédagogique de la découverte du jour"><strong>FICHE PÉDAGOGIQUE</strong><span><b>Objectif :</b> retenir et expliquer un fait sur la RDC.</span><span><b>Compétence :</b> sélectionner une information et la reformuler avec ses propres mots.</span><span><b>Indicateur :</b> reformulation fidèle sans ajouter d’information non vérifiée.</span><span><b>Preuve :</b> reformulation correcte du fait.</span><span><b>Statut :</b> contenu documenté · activité Mboka.</span></aside><button class="button primary" id="completeDaily">J’ai appris ce fait ✓</button></div>
+      <div class="week-card"><div class="week-heading"><div><small>MES 7 DERNIERS JOURS</small><strong id="weekProgress">0 / 7</strong></div><span>Objectif : 7 jours</span></div><div class="week-days" id="weekDays"></div><div class="reward-track"><i id="rewardProgress"></i></div><p>Prochaine récompense : <strong id="nextReward">Badge Flamme · 3 jours</strong></p></div>
+    </section>
+
+    <section class="guided-path" id="guidedPath" aria-labelledby="guidedPathTitle">
+      <div class="guided-path-heading"><span class="eyebrow">Parcours recommandé</span><h2 id="guidedPathTitle">Trois étapes pour commencer.</h2><p>Une route simple pour découvrir Mboka sans devoir choisir parmi tous les modules.</p></div>
+      <div class="guided-path-steps"><a class="guided-step active" data-guided-step="learn" href="#explorer"><span>01</span><div><small>APPRENDRE</small><strong>Découvrir un parcours</strong><p>Choisis un thème et ouvre une première leçon.</p></div><b>→</b></a><a class="guided-step" data-guided-step="play" href="#quiz"><span>02</span><div><small>JOUER</small><strong>Tester tes connaissances</strong><p>Réponds à dix questions adaptées à ton niveau.</p></div><b>→</b></a><a class="guided-step" data-guided-step="teach" href="#enseignants"><span>03</span><div><small>TRANSMETTRE</small><strong>Générer une fiche d’exercices</strong><p>Transforme la découverte en fiche imprimable.</p></div><b>→</b></a></div>
+    </section>
+
+    <section class="section" id="explorer">
+      <div class="section-heading"><div><span class="eyebrow">Choisis ta route</span><h2>Un pays, mille découvertes</h2></div><p>Chaque parcours contient des histoires courtes, des faits étonnants et des défis.</p></div>
+      <aside class="activity-pedagogy-card journey-pedagogy-card" aria-label="Fiche pédagogique des parcours de découverte"><strong>FICHE PÉDAGOGIQUE</strong><span><b>Objectif :</b> explorer un thème et relier plusieurs faits.</span><span><b>Compétence :</b> observer, comparer et restituer une information.</span><span><b>Indicateur :</b> au moins trois observations exactes restituées.</span><span><b>Preuve :</b> leçon ouverte, faits reformulés et question posée.</span><span><b>Statut :</b> adaptation pédagogique Mboka.</span></aside><div class="journey-grid" id="journeyGrid"></div>
+    </section>
+
+    <section class="math-section advanced-module" id="math" hidden>
+      <div class="math-heading">
+        <div><span class="eyebrow">Mathématiques du quotidien</span><h2>Calculer pour<br>comprendre le monde.</h2></div>
+        <div class="math-intro"><p id="mathIntro">Dix unités courtes avec des situations inspirées de la vie quotidienne en RDC.</p><div class="level-picker" id="mathLevelPicker"><button data-math-level="explorer"><strong>Explorateur</strong><small>7–10 ANS</small></button><button class="active" data-math-level="adventurer"><strong>Aventurier</strong><small>11–14 ANS</small></button><button data-math-level="master"><strong>Maître</strong><small>15+ ANS</small></button></div></div>
+      </div>
+      <div class="math-progress"><div><small id="mathProgressLabel">UNITÉS MAÎTRISÉES</small><strong id="mathProgressText">0 / 10</strong></div><div class="math-progress-track"><i id="mathProgressBar"></i></div></div>
+      <aside class="lab-pedagogy-card math-pedagogy-card" aria-label="Fiche pédagogique du laboratoire de mathématiques"><strong>FICHE PÉDAGOGIQUE</strong><div><span><b>Objectif :</b> résoudre une situation contextualisée en choisissant une stratégie de calcul.</span><span><b>Compétence :</b> mobiliser nombres, mesure et raisonnement pour justifier une solution.</span><span><b>Indicateur :</b> résultat correct et démarche expliquée ou vérifiée.</span><span><b>Preuve :</b> réponse, calculs intermédiaires et contrôle du résultat.</span><span><b>Statut :</b> adaptation pédagogique Mboka · usage adaptable en classe.</span></div></aside>
+      <div class="math-unit-grid" id="mathUnitGrid"></div>
+      <div class="math-challenge" id="mathChallenge" hidden>
+        <div class="math-challenge-top"><div><small id="mathUnitNumber">UNITÉ 01</small><h3 id="mathUnitTitle"></h3></div><button type="button" id="mathClose" aria-label="Fermer">×</button></div>
+        <p class="math-context" id="mathContext"></p><strong class="math-question" id="mathQuestion"></strong><div class="math-options" id="mathOptions"></div><p class="math-feedback" id="mathFeedback" aria-live="polite"></p><button class="button primary" id="mathNext" hidden>Nouvel exercice →</button>
+      </div>
+    </section>
+
+    <section class="music-game-section advanced-module" id="musicLab" hidden>
+      <div class="music-game-heading"><div><span class="eyebrow light">Laboratoire musical</span><h2>Écouter, lire,<br>puis jouer.</h2></div><div><p id="musicGameIntro">Quatre étapes pour découvrir les notes, lire une portée et jouer de courtes mélodies originales.</p><div class="music-game-progress"><span id="musicGameProgress">0 / 4 sections maîtrisées</span><i><b id="musicGameProgressBar"></b></i></div></div></div>
+      <div class="music-game-layout">
+        <div class="music-section-list" id="musicSectionList"></div>
+        <div class="music-player" id="musicPlayer">
+          <div class="music-player-head"><div><small id="musicSectionNumber">SECTION 1</small><h3 id="musicSectionTitle"></h3></div><span id="musicStepScore">0 / 5</span></div>
+          <p id="musicInstruction"></p>
+          <div class="music-staff" id="musicStaff" hidden><span></span><span></span><span></span><span></span><span></span><div id="staffNotes"></div></div>
+          <div class="music-sequence" id="musicSequence" aria-label="Suite de notes"></div>
+          <div class="piano" id="musicKeyboard" aria-label="Clavier musical interactif"></div>
+          <p class="music-game-feedback" id="musicGameFeedback" aria-live="polite"></p>
+          <div class="music-player-actions"><button class="button secondary" id="musicListen">Écouter</button><button class="button primary" id="musicRestart">Recommencer</button></div>
+        </div>
+      </div>
+      <aside class="lab-pedagogy-card music-pedagogy-card" aria-label="Fiche pédagogique du laboratoire musical"><strong>FICHE PÉDAGOGIQUE</strong><div><span><b>Objectif :</b> identifier et reproduire une courte séquence musicale.</span><span><b>Compétence :</b> écouter, lire et interpréter des notes simples.</span><span><b>Indicateur :</b> au moins 4 notes sur 5 correctement reproduites.</span><span><b>Preuve :</b> séquence jouée et vocabulaire musical utilisé.</span><span><b>Statut :</b> adaptation pédagogique Mboka · usage adaptable en classe.</span></div></aside><p class="music-game-note" id="musicGameNote">Les mélodies de cet exercice sont originales. Le son est produit sur l’appareil et aucune donnée audio n’est enregistrée.</p>
+    </section>
+
+    <section class="chess-lab advanced-module" id="chessLab" hidden>
+      <div class="chess-heading"><div><span class="eyebrow">Laboratoire d’échecs</span><h2>Observer, calculer,<br>puis jouer.</h2></div><div><p id="chessIntro">Sept sections progressives pour apprendre les règles, les tactiques, la stratégie et la visualisation.</p><div class="chess-progress"><span id="chessProgressText">0 / 7 sections maîtrisées</span><i><b id="chessProgressBar"></b></i></div></div></div>
+      <div class="chess-layout">
+        <div class="chess-sections" id="chessSectionList"></div>
+        <div class="chess-panel"><div class="chess-board-wrap"><div class="chess-board" id="chessBoard" aria-label="Échiquier interactif"></div></div><div class="chess-copy"><div class="spoken-title"><div><small id="chessSectionNumber">SECTION 1</small><h3 id="chessSectionTitle"></h3></div><button class="speak-control" id="chessSpeak" type="button" aria-label="Écouter l’instruction">♪</button></div><p id="chessLesson"></p><p class="chess-objective" id="chessObjective"></p><p class="chess-feedback" id="chessFeedback" aria-live="polite"></p><div class="chess-actions"><button class="button secondary" id="chessReset">Recommencer l’exercice</button></div></div></div>
+      </div>
+      <aside class="lab-pedagogy-card chess-pedagogy-card" aria-label="Fiche pédagogique du laboratoire d’échecs"><strong>FICHE PÉDAGOGIQUE</strong><div><span><b>Objectif :</b> observer une position et choisir un coup pertinent.</span><span><b>Compétence :</b> analyser, calculer et expliquer une décision.</span><span><b>Indicateur :</b> coup correct accompagné d’une justification.</span><span><b>Preuve :</b> position résolue et menace ou stratégie expliquée.</span><span><b>Statut :</b> adaptation pédagogique Mboka · usage adaptable en classe.</span></div></aside><p class="chess-note" id="chessNote">Toutes les positions et explications de ce parcours éducatif sont originales. La progression reste sur cet appareil.</p>
+    </section>
+
+    <section class="lingala-section advanced-module" id="lingalaGame" hidden>
+      <div class="lingala-intro"><span class="eyebrow light">Défi linguistique</span><h2>Mbote !<br>Pratique le lingala</h2><p>Choisis la bonne signification. Cinq manches rapides pour retenir les premiers mots.</p><div class="lingala-score"><span id="lingalaRound">1 / 5</span><strong><span id="lingalaScore">0</span> points</strong></div></div>
+      <div class="lingala-game-card"><small id="lingalaPrompt">QUE SIGNIFIE…</small><div class="spoken-title"><h3 id="lingalaWord">Mbote</h3><button class="speak-control" id="lingalaSpeak" aria-label="Écouter le mot">♪</button></div><div class="lingala-options" id="lingalaOptions"></div><p class="lingala-feedback" id="lingalaFeedback" aria-live="polite"></p><button class="button primary" id="lingalaNext" hidden>Continuer →</button><div class="lingala-result" id="lingalaResult" hidden><span>✦</span><h3 id="lingalaResultTitle">Malamu!</h3><p id="lingalaResultText"></p><button class="button primary" id="lingalaRestart">Rejouer</button></div></div>
+    </section>
+
+    <section class="memory-section advanced-module" id="memory" hidden>
+      <div class="memory-top"><div><span class="eyebrow">Jeu de mémoire</span><h2>Les trésors<br>du Congo</h2></div><div class="memory-copy"><p>Retourne les cartes et associe chaque trésor à sa signification.</p><div class="memory-controls"><label><span id="memoryCollectionLabel">Collection</span><select id="memoryCollection"><option value="treasures">Trésors du Congo</option><option value="provinces">Provinces et chefs-lieux</option><option value="nature">Nature et biodiversité</option><option value="history">Histoire et dates</option></select></label><label><span id="memoryDifficultyLabel">Difficulté</span><select id="memoryDifficulty"><option value="4">Débutant · 4 paires</option><option value="6" selected>Intermédiaire · 6 paires</option><option value="8">Avancé · 8 paires</option></select></label></div><div class="memory-meters"><span>COUPS <strong id="memoryMoves">0</strong></span><span>PAIRES <strong id="memoryPairs">0/6</strong></span><span>RECORD <strong id="memoryBest">—</strong></span></div></div></div>
+      <aside class="activity-pedagogy-card" aria-label="Fiche pédagogique du jeu de mémoire"><strong>FICHE PÉDAGOGIQUE</strong><span><b>Objectif :</b> mémoriser et relier des informations sur la RDC.</span><span><b>Compétence :</b> observer, comparer et rappeler des éléments.</span><span><b>Indicateur :</b> retrouver les paires avec une stratégie expliquée.</span><span><b>Preuve :</b> paires réussies et justification d’une association.</span><span><b>Statut :</b> adaptation pédagogique Mboka.</span></aside><div class="memory-board" id="memoryBoard" aria-label="Jeu de mémoire"></div>
+      <div class="memory-complete" id="memoryComplete" hidden><span>✦</span><div><strong id="memoryTitle">Mémoire remarquable !</strong><p id="memoryMessage"></p></div><button class="button primary" id="memoryRestart">Mélanger et rejouer</button></div>
+    </section>
+
+    <section class="province-section" id="provinces">
+      <div class="province-copy"><span class="eyebrow light">Carte d'exploration</span><h2>26 provinces.<br>26 identités.</h2><p>Découvre les chefs-lieux, paysages et repères de chaque province.</p><label class="search"><span>⌕</span><input id="provinceSearch" type="search" placeholder="Chercher une province…" autocomplete="off"></label><div class="region-filters" id="regionFilters"><button class="active" data-region="Toutes">Toutes</button><button data-region="Ouest">Ouest</button><button data-region="Centre">Centre</button><button data-region="Nord">Nord</button><button data-region="Est">Est</button><button data-region="Sud">Sud</button></div><p class="result-count" id="provinceCount"></p></div>
+      <div class="province-panel"><div class="province-list" id="provinceList"></div></div>
+      <aside class="activity-pedagogy-card province-pedagogy-card" aria-label="Fiche pédagogique de la carte des provinces"><strong>FICHE PÉDAGOGIQUE</strong><span><b>Objectif :</b> situer une province et relier chef-lieu, repère et contexte.</span><span><b>Compétence :</b> lire une carte et comparer des territoires.</span><span><b>Indicateur :</b> province, chef-lieu et repère correctement associés.</span><span><b>Preuve :</b> profil provincial ouvert et comparaison formulée.</span><span><b>Statut :</b> adaptation pédagogique Mboka.</span></aside><div class="province-map-block">
+        <div class="map-header"><div><span>CARTE INTERACTIVE</span><h3>Voyage à travers la RDC</h3></div><div class="map-level-switch" role="group" aria-label="Niveau administratif"><button class="active" id="showProvinces" aria-pressed="true">26 provinces</button><button id="showTerritories" aria-pressed="false">145 territoires</button></div></div>
+        <div class="map-layout">
+          <div class="map-stage has-real-map" id="mapStage" aria-label="Carte administrative interactive de la RDC">
+            <svg id="drcProvinceMap" viewBox="0 0 800 560" role="img" aria-label="Carte administrative pédagogique de la République démocratique du Congo"><g id="provinceBoundaryLayer"></g><g id="territoryBoundaryLayer" hidden></g></svg>
+            <div id="mapMarkers"></div>
+          </div>
+          <aside class="map-preview" id="mapPreview"><label class="territory-picker" id="territoryPicker" hidden><span>Choisir un territoire</span><select id="territorySelect"><option value="">Les 145 territoires…</option></select></label><span class="map-zone" id="mapZone">COMMENCE ICI</span><div class="spoken-title"><h3 id="mapProvince">Choisis une province</h3><button class="speak-control" id="mapSpeak" aria-label="Écouter le lieu" disabled>♪</button></div><p id="mapDescription">Sélectionne un point sur la carte pour découvrir son chef-lieu et un repère important.</p><div class="map-meta"><div><small id="mapCapitalLabel">CHEF-LIEU</small><strong id="mapCapital">—</strong></div><div><small id="mapLandmarkLabel">REPÈRE</small><strong id="mapLandmark">—</strong></div></div><button class="button primary" id="openMapProfile" disabled>Ouvrir le profil →</button></aside>
+        </div><p class="map-source" id="mapSource"><strong>Sources cartographiques :</strong> provinces — geoBoundaries COD ADM1, OpenStreetMap/Wambacher, ODbL 1.0; territoires — geoBoundaries COD ADM2, Référentiel Géographique Commun/OCHA RDC, CC BY 3.0 IGO. Catalogue recoupé avec la CAID et le PDL-145T. Limites indicatives à vocation pédagogique.</p>
+      </div>
+    </section>
+
+    <section class="sprint-section advanced-module" id="sprint" hidden>
+      <div class="sprint-heading"><div><span class="eyebrow light">Nouveau jeu</span><h2>Le Sprint<br>des provinces</h2><p>Associe chaque province à son chef-lieu. Dix manches, trois vies et un nouveau défi à chaque partie.</p></div><div class="level-picker sprint-mode" id="sprintMode"><button class="active" data-sprint-mode="solo"><strong>Solo</strong><small>3 VIES</small></button><button data-sprint-mode="team"><strong>Deux équipes</strong><small>10 TOURS</small></button></div><div class="sprint-best"><span>MEILLEUR SCORE</span><strong id="sprintBest">0</strong><small>points</small></div></div>
+      <aside class="activity-pedagogy-card sprint-pedagogy-card" aria-label="Fiche pédagogique du Sprint des provinces"><strong>FICHE PÉDAGOGIQUE</strong><span><b>Objectif :</b> associer chaque province à son chef-lieu.</span><span><b>Compétence :</b> mobiliser des repères géographiques sous contrainte de temps.</span><span><b>Indicateur :</b> réponses exactes et stratégie de rappel améliorée.</span><span><b>Preuve :</b> score, série de réponses et correction expliquée.</span><span><b>Statut :</b> adaptation pédagogique Mboka.</span></aside><div class="sprint-game">
+        <div class="sprint-status"><div><small>MANCHE</small><strong id="sprintRound">1 / 10</strong></div><div><small>SÉRIE</small><strong id="sprintStreak">0 🔥</strong></div><div><small>VIES</small><strong id="sprintLives">♥ ♥ ♥</strong></div><div><small>SCORE</small><strong id="sprintScore">0</strong></div></div>
+        <div class="sprint-play" id="sprintPlay"><span class="map-pin">⌖</span><small>QUEL EST LE CHEF-LIEU DE…</small><h3 id="sprintProvince"></h3><div class="sprint-options" id="sprintOptions"></div><p class="sprint-feedback" id="sprintFeedback" aria-live="polite"></p><button class="button sprint-next" id="sprintNext">Continuer →</button></div>
+        <div class="sprint-result" id="sprintResult" hidden><span>🏆</span><h3 id="sprintResultTitle">Beau parcours !</h3><strong id="sprintFinalScore">0 points</strong><p id="sprintResultText"></p><button class="button primary" id="sprintRestart">Nouveau sprint</button></div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+      <div class="quiz-intro"><span class="eyebrow">Défi du jour</span><h2>Prêt à tester tes connaissances ?</h2><p>Dix questions adaptées à ton niveau pour voyager à travers la RDC.</p><div class="quiz-config"><label><span id="quizModeLabel">Mode</span><select id="quizMode"><option value="general">Quiz général</option><option value="province">Quiz par province</option></select></label><label id="quizTopicControl"><span id="quizTopicLabel">Thème</span><select id="quizTopic"><option value="all">Tous les thèmes</option><option value="geography">Géographie et provinces</option><option value="nature">Nature et sciences</option><option value="culture">Culture et histoire</option></select></label><label id="quizProvinceControl" hidden><span id="quizProvinceLabel">Province</span><select id="quizProvince"></select></label></div><div class="level-picker" id="levelPicker"><button data-level="explorer"><strong>Explorateur</strong><small>7–10 ANS</small></button><button class="active" data-level="adventurer"><strong>Aventurier</strong><small>11–14 ANS</small></button><button data-level="master"><strong>Maître</strong><small>15+ ANS</small></button></div><div class="score-preview"><span>✦</span><div><strong id="bestScore">0/10</strong><small>MEILLEUR SCORE</small></div></div></div>
+      <aside class="activity-pedagogy-card" aria-label="Fiche pédagogique du quiz"><strong>FICHE PÉDAGOGIQUE</strong><span><b>Objectif :</b> vérifier et consolider des connaissances sur la RDC.</span><span><b>Compétence :</b> mobiliser une information et justifier une réponse.</span><span><b>Indicateur :</b> score et explication correcte après chaque réponse.</span><span><b>Preuve :</b> réponses, score final et faits compris.</span><span><b>Statut :</b> adaptation pédagogique Mboka.</span></aside><div class="quiz-card" id="quizCard">
+        <div class="quiz-top"><span id="questionNumber">QUESTION 1 SUR 10</span><span class="points">+100 POINTS</span></div>
+        <div class="progress"><i id="progressBar"></i></div>
+        <div id="questionView"><span class="question-topic" id="questionTopic"></span><h3 id="questionText"></h3><div class="answers" id="answers"></div><div class="feedback" id="feedback" aria-live="polite"></div><button class="button primary next" id="nextButton">Question suivante →</button></div>
+        <div class="result" id="resultView" hidden><span class="result-icon">★</span><h3 id="resultTitle">Belle exploration !</h3><p id="resultMessage"></p><strong id="finalScore"></strong><button class="button primary" id="restartButton">Rejouer</button></div>
+      </div>
+    </section>
+    <section class="achievement-section" id="reussites"><div class="achievement-heading"><div><span class="eyebrow">Figures inspirantes</span><h2>Des parcours<br>qui font avancer.</h2></div><p id="achievementIntro">Découvre des Congolaises et Congolais dont le travail rayonne dans la science, la paix, le sport et la société.</p></div><div class="achievement-grid" id="achievementGrid"></div></section>
+    <section class="history-section" id="histoire"><div class="history-heading"><div><span class="eyebrow">CHRONOLOGIE INTERACTIVE</span><h2>L’histoire de la RDC<br>à travers le temps.</h2></div><p>Relie les sociétés anciennes, la période coloniale, l’indépendance et la construction politique contemporaine.</p></div><div class="history-filters" id="historyFilters" role="group" aria-label="Filtrer les périodes historiques"></div><div class="history-timeline" id="historyTimeline"></div><p class="history-note" id="historyNote"></p></section>
+    <section class="kingdom-section" id="royaumes"><div class="kingdom-heading"><div><span class="eyebrow light">Histoire et mémoire</span><h2>Royaumes et<br>sociétés anciennes.</h2></div><p id="kingdomIntro">Explore quatre grands ensembles historiques liés au territoire congolais et à l’histoire de l’Afrique centrale.</p></div><div class="kingdom-grid" id="kingdomGrid"></div></section>
+    <section class="presidency-section" id="presidence"><div class="presidency-heading"><div><span class="eyebrow">Depuis l’indépendance</span><h2>La présidence<br>à travers le temps.</h2></div><p id="presidencyIntro">Découvre les cinq présidents de la RDC depuis 1960 et les grandes transitions qui ont marqué le pays.</p></div><div class="presidency-timeline" id="presidencyTimeline"></div><div class="presidency-context" id="presidencyContext"></div><p class="presidency-source" id="presidencySource"></p></section>
+    <section class="heroes-section" id="heros"><div class="heroes-heading"><div><span class="eyebrow light">Mémoire et courage</span><h2>Héros nationaux<br>et grandes figures.</h2></div><p id="heroesIntro">Découvre des femmes et des hommes dont le courage, les idées ou le sacrifice ont marqué l’histoire congolaise.</p></div><div class="heroes-note" id="heroesNote"></div><div class="heroes-grid" id="heroesGrid"></div><p class="heroes-source" id="heroesSource"></p></section>
+    <section class="community-section" id="communautes"><div class="community-heading"><span class="eyebrow">Cultures vivantes</span><h2>Communautés et transmission</h2><p id="communityIntro">Découvre comment des savoirs, des arts et des valeurs continuent de circuler entre générations.</p></div><div class="community-note" id="communityNote">Ces portraits sont des introductions : les pratiques varient selon les familles, les localités et les générations.</div><div class="community-grid" id="communityGrid"></div></section>
+    <section class="food-section" id="saveurs"><div class="food-heading"><div><span class="eyebrow">Saveurs du pays</span><h2>Une cuisine,<br>mille variations.</h2></div><p id="foodIntro">Découvre des plats, ingrédients et méthodes qui relient champs, rivières, marchés et tables familiales.</p></div><div class="food-note" id="foodNote">Les recettes changent selon les régions et les familles. Toute activité de cuisine doit être réalisée avec un adulte; le manioc doit toujours être correctement préparé et cuit.</div><div class="food-grid" id="foodGrid"></div></section>
+    <section class="environment-section" id="environnement"><div class="environment-heading"><div><span class="eyebrow">Nature et science</span><h2>Un pays de<br>grands écosystèmes.</h2></div><p id="environmentIntro">Observe comment climat, eau, relief et êtres vivants forment des systèmes liés.</p></div><div class="environment-grid" id="environmentGrid"></div><div class="environment-action" id="environmentAction"><strong>Défi scientifique :</strong> choisis un écosystème près de chez toi et note pendant une semaine la pluie, les plantes, les animaux et les activités humaines observés—sans déranger la nature.</div></section>
+    <section class="resource-section" id="ressources"><div class="resource-heading"><div><span class="eyebrow">Minéraux et responsabilité</span><h2>De la roche<br>à nos objets.</h2></div><p id="resourceIntro">Comprends où se trouvent quelques ressources, à quoi elles servent et pourquoi leur gestion concerne les personnes comme la nature.</p></div><div class="resource-grid" id="resourceGrid"></div><div class="supply-chain" id="supplyChain"></div><p class="resource-principle" id="resourcePrinciple"></p></section>
+    <section class="digital-section" id="numerique" aria-labelledby="digitalTitle">
+      <div class="digital-heading"><div><span class="eyebrow" id="digitalEyebrow">MBOKA NUMÉRIQUE</span><h2 id="digitalTitle">Comprendre ses droits<br>et responsabilités numériques.</h2></div><p id="digitalIntro">Une introduction pédagogique au Code du numérique de la RDC, fondée sur l’Ordonnance-loi n° 23/010 du 13 mars 2023.</p></div>
+      <div class="digital-notice" id="digitalNotice"><strong>Information juridique</strong><p>Mboka facilite la compréhension du Code du numérique. Ces contenus éducatifs ne constituent pas un avis juridique. En cas de divergence, le texte officiel fait foi.</p></div>
+      <div class="digital-tools"><label><span id="digitalSearchLabel">Rechercher un thème</span><input id="digitalSearch" type="search" autocomplete="off" placeholder="Données, fraude, signature…"></label><p id="digitalResultCount" aria-live="polite"></p></div>
+      <div class="digital-topic-grid" id="digitalTopicGrid"></div>
+      <article class="digital-lesson" id="digitalLesson" hidden aria-live="polite"><button type="button" id="digitalLessonClose" aria-label="Fermer">×</button><span id="digitalLessonTag"></span><h3 id="digitalLessonTitle"></h3><div class="digital-lesson-grid"><div><small id="digitalLawLabel">REPÈRE DANS LE CODE</small><p id="digitalLaw"></p></div><div><small id="digitalSimpleLabel">EN TERMES SIMPLES</small><p id="digitalSimple"></p></div><div><small id="digitalCaseLabel">CAS PRATIQUE</small><p id="digitalCase"></p></div><div><small id="digitalActionLabel">BON RÉFLEXE</small><p id="digitalAction"></p></div></div><a id="digitalOfficialLink" href="#" data-digital-source="official" target="_blank" rel="noopener noreferrer">Consulter le texte de référence ↗</a></article>
+      <div class="digital-quiz"><div><span class="eyebrow" id="digitalQuizEyebrow">QUIZ CITOYEN NUMÉRIQUE</span><h3 id="digitalQuizTitle">Six situations pour vérifier les bons réflexes.</h3><p id="digitalQuizProgress"></p></div><article><h4 id="digitalQuestion"></h4><div id="digitalAnswers"></div><p id="digitalFeedback" aria-live="polite"></p><button class="button primary" type="button" id="digitalNext">Question suivante</button></article></div>
+      <div class="digital-sources"><strong id="digitalSourcesTitle">Sources et méthode</strong><p id="digitalSourcesText">Références : Ordonnance-loi n° 23/010 du 13 mars 2023 et structure publiée du Code. Les explications et cas pratiques sont des adaptations pédagogiques Mboka.</p><div><a href="#" data-digital-source="official" target="_blank" rel="noopener noreferrer">ANAPI · Texte du Code ↗</a><a href="#" data-digital-source="structure" target="_blank" rel="noopener noreferrer">Sommaire structuré des 390 articles ↗</a></div></div>
+    </section>
+    <section class="creativity-section" id="creativite"><div class="creativity-heading"><span class="eyebrow light">Arts vivants</span><h2>Créer, raconter,<br>faire danser.</h2><p id="creativityIntro">Explore des pratiques anciennes et contemporaines qui transforment sons, mouvements, matières et récits.</p></div><div class="creativity-grid" id="creativityGrid"></div><div class="creative-challenge" id="creativeChallenge"></div></section>
+    <section class="sources-section" id="sources"><div class="sources-heading"><div><span class="eyebrow" id="sourcesEyebrow">SOURCES ET MÉTHODE</span><h2 id="sourcesTitle">Comprendre d’où viennent les informations.</h2></div><p id="sourcesIntro">Mboka distingue les données institutionnelles, les contenus documentés et ses adaptations pédagogiques.</p></div><div class="source-status" id="sourceStatus"></div><div class="source-grid" id="sourceGrid"></div><p class="source-note" id="sourceNote"></p></section>
+    <section class="teacher-section" id="enseignants">
+      <div class="teacher-intro"><span class="eyebrow">Espace enseignants</span><h2>Salisa Mboka Ekota<br>Kelasi</h2><p>Crée une fiche d’activité prête à imprimer à partir des questions du jeu.</p><div class="teacher-benefits"><span>✓ Sans compte</span><span>✓ Réponses facultatives</span><span>✓ Nouvelle fiche en un clic</span></div></div>
+      <div class="worksheet-builder">
+        <div class="builder-top"><div><small>FICHE D’EXERCICES</small><h3>Générer une fiche d’exercices</h3></div><span class="teacher-mark">M</span></div>
+        <div class="builder-controls"><label id="worksheetLevelLabel">Niveau d’âge<select id="worksheetLevel"><option value="explorer">Explorateur · 7–10 ans</option><option value="adventurer" selected>Aventurier · 11–14 ans</option><option value="master">Maître · 15+ ans</option></select></label><label id="worksheetTopicLabel">Thème prioritaire<select id="worksheetTopic"><option value="all">Tous les thèmes</option><option value="geography">Géographie et provinces</option><option value="nature">Nature et sciences</option><option value="culture">Culture et histoire</option></select></label><label id="worksheetCountLabel">Nombre de questions<select id="worksheetCount"><option value="5">5 questions</option><option value="10">10 questions</option></select></label><label class="check-control"><input type="checkbox" id="worksheetAnswers"><span>Ajouter le corrigé</span></label></div>
+        <div class="builder-actions"><button class="button secondary" id="generateWorksheet">↻ Nouvelle fiche</button><button class="button primary" id="printWorksheet">Imprimer la fiche</button><button class="button secondary" id="printLessonPlan">Plan de leçon</button></div>
+        <p class="teacher-note" id="worksheetNote">Le thème choisi est prioritaire; la fiche utilise les autres thèmes du même niveau pour atteindre 5 ou 10 questions. L’impression permet aussi d’enregistrer en PDF.</p>
+      </div>
+      <section class="class-mode" id="classMode" aria-labelledby="classModeTitle">
+        <div class="class-mode-heading"><div><small id="classModeEyebrow">MODE CLASSE · LOCAL</small><h3 id="classModeTitle">Préparer une séance Mboka</h3></div><p id="classModeIntro">Crée un code de séance et une fiche imprimable. Aucune donnée d’élève n’est envoyée en ligne.</p></div>
+        <form class="class-mode-form" id="classModeForm">
+          <label><span id="classSessionTitleLabel">Titre de la séance</span><input id="classSessionTitle" maxlength="100" required placeholder="Ex. Découvrir les provinces"></label>
+          <label><span id="classSchoolCodeLabel">Code école ou groupe</span><input id="classSchoolCode" maxlength="14" required placeholder="Ex. KIN-01"></label>
+          <label><span id="classLevelLabel">Niveau</span><select id="classLevel"><option value="explorer">Explorateur · 7–10 ans</option><option value="adventurer" selected>Aventurier · 11–14 ans</option><option value="master">Maître · 15+ ans</option></select></label>
+          <label><span id="classActivityLabel">Activité</span><select id="classActivity"><option value="quiz">Quiz RDC</option><option value="sprint">Sprint des provinces</option><option value="provinces">Carte des provinces</option><option value="math">Mathématiques</option><option value="memory">Jeu de mémoire</option><option value="musicLab">Musique</option><option value="chessLab">Échecs</option><option value="numerique">Mboka Numérique</option></select></label>
+          <label><span id="classDurationLabel">Durée</span><select id="classDuration"><option value="20">20 minutes</option><option value="30" selected>30 minutes</option><option value="45">45 minutes</option><option value="60">60 minutes</option></select></label>
+          <label class="class-goal"><span id="classGoalLabel">Objectif de la séance</span><textarea id="classGoal" maxlength="240" required placeholder="Ce que les élèves devront savoir ou savoir faire"></textarea></label>
+          <button class="button primary" type="submit" id="createClassSession">Créer la séance</button>
+        </form>
+        <article class="class-session-card" id="classSessionCard" hidden aria-live="polite">
+          <div class="class-session-code"><span id="classSessionCodeLabel">CODE DE SÉANCE</span><strong id="classSessionCode"></strong></div>
+          <div><small id="classSessionReadyLabel">SÉANCE PRÊTE</small><h4 id="classSessionName"></h4><p id="classSessionSummary"></p><p id="classSessionGoal"></p></div>
+          <div class="class-session-actions"><a class="button primary" id="openClassActivity" href="#quiz">Ouvrir l’activité</a><button class="button secondary" type="button" id="printClassSession">Imprimer la séance</button><button class="button secondary" type="button" id="exportClassSessions">Exporter le registre CSV</button></div>
+          <p class="class-session-note" id="classSessionNote">Utilise ce code comme « code école » dans le pré-test et le post-test pour regrouper les résultats anonymes de cette séance.</p>
+        </article>
+        <section class="class-session-history" id="classSessionHistory" aria-labelledby="classSessionHistoryTitle">
+          <div><small id="classSessionHistoryEyebrow">REGISTRE LOCAL</small><h4 id="classSessionHistoryTitle">Mes séances</h4><span id="classSessionCount">0 séance</span></div>
+          <div class="class-session-list" id="classSessionList"><p id="classSessionEmpty">Aucune séance enregistrée sur cet appareil.</p></div>
+        </section>
+      </section>
+    </section>
+    <section class="review-section" id="validationPedagogique"><div class="review-heading"><span class="eyebrow" id="reviewEyebrow">VALIDATION PÉDAGOGIQUE</span><h2 id="reviewTitle">Relire Mboka avec les éducateurs.</h2><p id="reviewIntro">Évalue un contenu sans indiquer ton nom. Les observations restent sur cet appareil jusqu’à leur exportation.</p></div><form class="review-form" id="contentReviewForm"><div class="review-grid"><label><span id="reviewContentLabel">Contenu examiné</span><select id="reviewContent"><option value="province">Province ou territoire</option><option value="history">Histoire</option><option value="quiz">Quiz ou jeu</option><option value="culture">Culture et langues</option><option value="environment">Environnement et ressources</option><option value="teacher">Outil enseignant</option></select></label><label><span id="reviewReferenceLabel">Titre, province ou leçon</span><input id="reviewReference" maxlength="100" required placeholder="Ex. Province du Sankuru"></label><label><span id="reviewAccuracyLabel">Exactitude</span><select id="reviewAccuracy" required><option value="">Choisir…</option><option value="1">1 — À corriger</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5 — Exact</option></select></label><label><span id="reviewClarityLabel">Clarté pédagogique</span><select id="reviewClarity" required><option value="">Choisir…</option><option value="1">1 — Difficile</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5 — Très claire</option></select></label><label><span id="reviewCultureLabel">Respect du contexte culturel</span><select id="reviewCulture" required><option value="">Choisir…</option><option value="1">1 — À revoir</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5 — Très juste</option></select></label><label><span id="reviewAgeLabel">Public conseillé</span><select id="reviewAge"><option value="7-10">7–10 ans</option><option value="11-14">11–14 ans</option><option value="15+">15+ ans</option><option value="all">Tous les âges</option></select></label><label class="review-wide"><span id="reviewNoteLabel">Correction ou précision proposée</span><textarea id="reviewNote" maxlength="800" required placeholder="Explique ce qui doit être conservé ou corrigé…"></textarea></label><label class="review-wide"><span id="reviewSourceLabel">Source suggérée (facultatif)</span><input id="reviewSource" maxlength="300" placeholder="Titre, institution ou lien documentaire"></label></div><div class="review-actions"><button class="button primary" type="submit" id="saveContentReview">Enregistrer la revue</button><button class="button secondary" type="button" id="exportContentReviews" disabled>Exporter les revues CSV</button><strong><span id="contentReviewCount">0</span> <span id="contentReviewCountLabel">revues locales</span></strong></div><p id="contentReviewStatus" aria-live="polite"></p></form></section>
+    <section class="pilot-measure" id="pilotMeasure"><div><span class="eyebrow" id="pilotMeasureEyebrow">MESURE DU PILOTE</span><h2 id="pilotMeasureTitle">Pré-test et post-test</h2><p id="pilotMeasureIntro">Compare les apprentissages avec un code anonyme, sans nom ni courriel.</p></div><div class="pilot-setup"><label><span id="pilotSchoolLabel">Code de l’école</span><input id="pilotSchool" maxlength="20" placeholder="Ex. ECOLE-01"></label><label><span id="pilotLevelLabel">Niveau</span><select id="pilotLevel"><option value="explorer">7–10 ans</option><option value="adventurer">11–14 ans</option><option value="master">15+ ans</option></select></label><button class="button primary" id="createPilotCode">Créer un code anonyme</button></div><div class="pilot-return"><label><span id="pilotExistingLabel">Déjà inscrit ? Entre ton code pour le post-test</span><input id="pilotExistingCode" maxlength="24" autocomplete="off" placeholder="Ex. ECOLE-01-ABC"></label><button class="button secondary" id="usePilotCode">Utiliser ce code</button></div><p class="pilot-message" id="pilotCodeStatus" aria-live="polite"></p><div class="pilot-code" id="pilotCodeBox" hidden><span id="pilotCodeLabel">Code à conserver :</span> <strong id="pilotLearnerCode"></strong></div><div class="pilot-test" id="pilotTest" hidden><div class="pilot-test-tabs"><button class="active" data-pilot-phase="pre">Pré-test</button><button data-pilot-phase="post">Post-test</button></div><p id="pilotTestProgress"></p><h3 id="pilotTestQuestion"></h3><div id="pilotTestAnswers" class="answers"></div><p id="pilotTestStatus" aria-live="polite"></p></div><div class="pilot-results"><strong><span id="pilotResultCount">0</span> <span id="pilotResultLabel">évaluations locales</span></strong><button class="button secondary" id="exportPilotResults" disabled>Exporter les résultats CSV</button></div></section>
+    <section class="impact-dashboard" id="impactDashboard"><div class="impact-heading"><div><span class="eyebrow" id="impactEyebrow">TABLEAU DE BORD D’IMPACT</span><h2 id="impactTitle">Transformer les résultats en preuves.</h2><p id="impactIntro">Importe le CSV du pilote pour analyser les résultats sur cet appareil. Aucun fichier n’est envoyé en ligne.</p></div><label class="impact-upload"><span id="impactUploadLabel">Importer les résultats CSV</span><input type="file" id="impactCsvFile" accept=".csv,text/csv"><small id="impactUploadHelp">Format produit par « Exporter les résultats CSV ».</small></label></div><p class="impact-status" id="impactStatus" aria-live="polite"></p><div id="impactResults" hidden><div class="impact-cards"><article><span id="impactPairsLabel">Paires complètes</span><strong id="impactPairs">0</strong></article><article><span id="impactPreLabel">Moyenne pré-test</span><strong id="impactPre">0 %</strong></article><article><span id="impactPostLabel">Moyenne post-test</span><strong id="impactPost">0 %</strong></article><article class="impact-gain-card"><span id="impactGainLabel">Gain moyen</span><strong id="impactGain">0 pp</strong></article></div><div class="impact-details"><article><h3 id="impactEvolutionTitle">Évolution des élèves</h3><div class="impact-distribution"><div><span id="impactImprovedLabel">Progression</span><strong id="impactImproved">0</strong></div><div><span id="impactStableLabel">Stable</span><strong id="impactStable">0</strong></div><div><span id="impactDeclinedLabel">Recul</span><strong id="impactDeclined">0</strong></div></div></article><article><h3 id="impactCoverageTitle">Couverture des données</h3><p id="impactCoverage"></p><p class="impact-caution" id="impactCaution">Ces résultats décrivent le groupe importé. Sans groupe de comparaison, ils ne prouvent pas que Mboka est l’unique cause du changement.</p></article></div><div class="impact-table-wrap"><table><thead><tr><th id="impactGroupHeader">Groupe</th><th id="impactLearnersHeader">Élèves</th><th id="impactPreHeader">Avant</th><th id="impactPostHeader">Après</th><th id="impactGainHeader">Gain</th></tr></thead><tbody id="impactGroupRows"></tbody></table></div><div class="impact-actions"><button class="button primary" id="printImpactReport">Imprimer le rapport d’impact</button><button class="button secondary" id="clearImpactDashboard">Retirer les données</button></div></div></section>
+    <section class="pilot-section" id="pilot">
+      <div class="pilot-intro"><span class="eyebrow">PROGRAMME PILOTE</span><h2>Salisa Mboka<br>Ekende Liboso</h2><p>Un retour court et anonyme pour améliorer l’exactitude, la difficulté et le plaisir d’apprendre.</p><div class="pilot-privacy">◈ Aucun nom, courriel ou compte demandé. Les réponses restent sur cet appareil jusqu’à leur exportation.</div></div>
+      <form class="pilot-form" id="pilotForm">
+        <div class="pilot-form-head"><div><small>QUESTIONNAIRE · 2 MINUTES</small><h3>Ton expérience</h3></div><span><strong id="feedbackCount">0</strong> réponses locales</span></div>
+        <div class="pilot-grid">
+          <label><span>Je réponds comme</span><select id="feedbackRole" required><option value="student">Élève</option><option value="teacher">Enseignant·e</option><option value="parent">Parent ou responsable</option></select></label>
+          <label><span>Mboka est facile à utiliser</span><select id="feedbackEase" required><option value="">Choisir…</option><option value="1">1 — Pas du tout</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5 — Tout à fait</option></select></label>
+          <label><span>Apprendre avec Mboka est amusant</span><select id="feedbackFun" required><option value="">Choisir…</option><option value="1">1 — Pas du tout</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5 — Tout à fait</option></select></label>
+          <label><span>J’ai appris quelque chose sur la RDC</span><select id="feedbackLearning" required><option value="">Choisir…</option><option value="1">1 — Pas du tout</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5 — Beaucoup</option></select></label>
+          <label><span>Mon activité préférée</span><select id="feedbackFavorite" required><option value="lessons">Parcours et leçons</option><option value="map">Carte et provinces</option><option value="memory">Jeu de mémoire</option><option value="sprint">Sprint des provinces</option><option value="quiz">Quiz</option><option value="daily">Découverte du jour</option></select></label>
+          <label class="pilot-comment"><span>Une suggestion ? <small>(facultatif)</small></span><textarea id="feedbackComment" maxlength="500" placeholder="Ce que tu as aimé ou ce qui devrait changer…"></textarea></label>
+        </div>
+        <div class="pilot-actions"><button class="button primary" type="submit">Enregistrer le retour</button><button class="button secondary" type="button" id="exportFeedback">Exporter en CSV</button><button class="clear-feedback" type="button" id="clearFeedback">Effacer</button></div><p class="pilot-status" id="pilotStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <section class="print-sheet" id="printSheet" aria-hidden="true"><header><div><strong>MBOKA</strong><span>EXPLORER LA RÉPUBLIQUE DÉMOCRATIQUE DU CONGO</span></div><div class="print-fields">Nom : ____________________ &nbsp;&nbsp; Date : ______________</div></header><h1>Fiche de connaissances</h1><p>Entoure la bonne réponse pour chaque question.</p><ol id="worksheetQuestions"></ol><div class="answer-key" id="worksheetKey"></div><footer>Mboka · Apprendre, explorer, transmettre</footer></section>
+
+  <footer><a class="brand" href="#accueil"><span class="brand-mark">M</span><span>Mboka</span></a><p>Apprendre. Explorer. Transmettre.</p><p>© 2026 IT-weor AB, Munganga</p><p><a id="privacyLink" href="privacy.html">Confidentialité</a><span> · RDC</span></p></footer>
+  <div class="modal" id="learningModal" hidden>
+    <button class="modal-backdrop" data-close-modal aria-label="Fermer"></button>
+    <section class="lesson-sheet" role="dialog" aria-modal="true" aria-labelledby="lessonTitle">
+      <button class="modal-close" data-close-modal aria-label="Fermer la leçon">×</button>
+      <div class="lesson-visual" id="lessonVisual"><span id="lessonIcon"></span><small id="lessonNumber"></small></div>
+      <div class="lesson-content">
+        <span class="eyebrow" id="lessonLabel">PARCOURS</span><div class="spoken-title"><h2 id="lessonTitle"></h2><button class="speak-control" id="lessonSpeak" aria-label="Écouter la leçon" title="Écouter la leçon">♪</button></div>
+        <p class="lesson-lead" id="lessonLead"></p><div class="lesson-facts" id="lessonFacts"></div>
+        <div class="lesson-actions"><button class="button secondary" data-close-modal>Retour</button><a class="button primary" href="#quiz" id="lessonQuiz">Faire le quiz →</a></div>
+      </div>
+    </section>
+  </div>
+  <div class="modal" id="profileModal" hidden>
+    <button class="modal-backdrop" data-close-profile aria-label="Fermer"></button>
+    <section class="profile-sheet" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+      <button class="modal-close" data-close-profile aria-label="Fermer le profil">×</button>
+      <div class="profile-cover"><span>MON CARNET D’EXPLORATEUR</span><div class="profile-avatar">KM</div><h2 id="profileTitle">Kimi</h2><p id="profileRank">Explorateur débutant</p></div>
+      <div class="profile-body">
+        <div class="level-row"><div><small>PROGRESSION GLOBALE</small><strong id="profilePercent">0%</strong></div><div class="level-track"><i id="profileProgress"></i></div></div>
+        <div class="profile-stats"><div><span>✦</span><strong id="profileQuiz">0/10</strong><small>MEILLEUR QUIZ</small></div><div><span>⌖</span><strong id="profileSprint">0</strong><small>RECORD SPRINT</small></div><div><span>◈</span><strong id="profileJourneys">0/8</strong><small>PARCOURS</small></div></div>
+        <div class="badge-heading"><div><small>MA COLLECTION</small><h3>Badges à débloquer</h3></div><span id="badgeCount">0 / 6</span></div>
+        <div class="badge-grid" id="badgeGrid"></div>
+        <div class="profile-actions"><button class="button primary" id="printProgress">Imprimer le rapport</button><button class="button secondary profile-reset" id="resetProgress">Réinitialiser ma progression</button></div>
+      </div>
+    </section>
+  </div>
+  <div class="modal teacher-account-modal" id="teacherAccountModal" hidden><button class="modal-backdrop" data-close-teacher-account aria-label="Fermer"></button><section class="teacher-account-sheet" role="dialog" aria-modal="true" aria-labelledby="teacherAccountTitle"><button class="modal-close" data-close-teacher-account aria-label="Fermer">×</button><div class="teacher-account-head"><span class="eyebrow" id="teacherAccountEyebrow">ESPACE ENSEIGNANT · BÊTA</span><h2 id="teacherAccountTitle">Ton espace pédagogique sécurisé.</h2><p id="teacherAccountIntro">Accès sur invitation. Les élèves continuent à utiliser Mboka sans compte.</p></div><div id="teacherAccountUnavailable" class="teacher-account-notice" hidden></div><form id="teacherLoginForm" class="teacher-login-form"><label><span id="teacherEmailLabel">Adresse professionnelle</span><input type="email" id="teacherEmail" autocomplete="email" required placeholder="enseignant@ecole.cd"></label><button class="button primary" type="submit" id="teacherLoginButton">Recevoir mon lien sécurisé</button><p id="teacherLoginHelp">Aucun mot de passe. Le lien est envoyé uniquement aux enseignants invités.</p></form><div id="teacherLoginSent" class="teacher-account-success" hidden></div><form id="teacherProfileForm" class="teacher-profile-form" hidden><div class="teacher-session-row"><div><small id="teacherConnectedLabel">CONNECTÉ</small><strong id="teacherSessionEmail"></strong><span id="teacherRole"></span></div><button type="button" id="teacherLogout">Se déconnecter</button></div><div class="teacher-profile-grid"><label><span id="teacherSchoolLabel">Établissement</span><input id="teacherSchool" maxlength="120" required></label><label><span id="teacherProvinceLabel">Province éducationnelle</span><select id="teacherProvince"></select></label><label><span id="teacherCycleLabel">Cycle principal</span><select id="teacherCycle"><option value="primary">Primaire · 1re–6e</option><option value="cteb">CTEB · 7e–8e</option><option value="humanities">Humanités</option><option value="other">Autre</option></select></label><label><span id="teacherSubjectsLabel">Disciplines</span><input id="teacherSubjects" maxlength="160" placeholder="Ex. mathématiques, histoire"></label></div><div class="teacher-profile-actions"><button class="button primary" type="submit" id="teacherSaveProfile">Enregistrer mon profil</button><a class="button secondary" href="#enseignants" data-close-teacher-account id="teacherOpenTools">Ouvrir les outils enseignants</a></div><p id="teacherProfileStatus" aria-live="polite"></p></form></section></div>
+  <script src="province-boundaries.js"></script>
+  <script src="territory-boundaries.js"></script>
+  <script src="content-en.js"></script>
+  <script src="app.js"></script>
+  <script src="i18n.js"></script>
+  <script src="history-timeline.js"></script>
+  <script src="math.js"></script>
+  <script src="music-game.js"></script>
+  <script src="chess-game.js"></script>
+  <script src="pilot-measure.js"></script>
+  <script src="pilot-dashboard.js"></script>
+  <script src="teacher-account.js"></script>
+  <script src="class-mode.js"></script>
+  <script src="digital-code.js"></script>
+  <script src="curriculum.js"></script>
+  <script src="content-review.js"></script>
+  <script src="sources.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>

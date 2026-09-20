@@ -1,0 +1,29 @@
+// Catalogue pédagogique des 145 territoires, groupés selon les 25 provinces concernées.
+// Kinshasa est une ville-province divisée en communes et ne contient aucun territoire.
+module.exports={
+  'Bas-Uele':['Aketi','Ango','Bambesa','Bondo','Buta','Poko'],
+  'Équateur':['Basankusu','Bikoro','Bolomba','Bomongo','Ingende','Lukolela','Makanza'],
+  'Haut-Katanga':['Kambove','Kasenga','Kipushi','Mitwaba','Pweto','Sakania'],
+  'Haut-Lomami':['Bukama','Kabongo','Kamina','Kanyama','Malemba-Nkulu'],
+  'Haut-Uele':['Dungu','Faradje','Niangara','Rungu','Wamba','Watsa'],
+  'Ituri':['Aru','Djugu','Irumu','Mahagi','Mambasa'],
+  'Kasaï':['Dekese','Ilebo','Kamonia','Luebo','Mweka'],
+  'Kasaï-Central':['Demba','Dibaya','Dimbelenge','Kazumba','Luiza'],
+  'Kasaï-Oriental':['Kabeya-Kamwanga','Katanda','Lupatapata','Miabi','Tshilenge'],
+  'Kongo-Central':['Kasangulu','Kimvula','Lukula','Luozi','Madimba','Mbanza-Ngungu','Moanda','Seke-Banza','Songololo','Tshela'],
+  'Kwango':['Feshi','Kahemba','Kasongo-Lunda','Kenge','Popokabaka'],
+  'Kwilu':['Bagata','Bulungu','Gungu','Idiofa','Masi-Manimba'],
+  'Lomami':['Kabinda','Kamiji','Lubao','Luilu','Ngandajika'],
+  'Lualaba':['Dilolo','Kapanga','Lubudi','Mutshatsha','Sandoa'],
+  'Mai-Ndombe':['Bolobo','Inongo','Kiri','Kutu','Kwamouth','Mushie','Oshwe','Yumbi'],
+  'Maniema':['Kabambare','Kailo','Kasongo','Kibombo','Lubutu','Pangi','Punia'],
+  'Mongala':['Bongandanga','Bumba','Lisala'],
+  'Nord-Kivu':['Beni','Lubero','Masisi','Nyiragongo','Rutshuru','Walikale'],
+  'Nord-Ubangi':['Bosobolo','Businga','Mobayi-Mbongo','Yakoma'],
+  'Sankuru':['Katako-Kombe','Kole','Lodja','Lomela','Lubefu','Lusambo'],
+  'Sud-Kivu':['Fizi','Idjwi','Kabare','Kalehe','Mwenga','Shabunda','Uvira','Walungu'],
+  'Sud-Ubangi':['Budjala','Gemena','Kungu','Libenge'],
+  'Tanganyika':['Kabalo','Kalemie','Kongolo','Manono','Moba','Nyunzu'],
+  'Tshopo':['Bafwasende','Banalia','Basoko','Isangi','Opala','Ubundu','Yahuma'],
+  'Tshuapa':['Befale','Boende','Bokungu','Djolu','Ikela','Monkoto']
+};

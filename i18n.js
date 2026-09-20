@@ -1,7 +1,7 @@
 // Stage-one interface localization. Educational question packs remain authored in French.
 const uiCopy={
   '.primary-nav>a:nth-of-type(1)':['Explorer','Explore'],'.primary-nav>a:nth-of-type(2)':['Provinces','Provinces'],'.primary-nav>a:nth-of-type(3)':['Maths','Maths'],'.primary-nav>a:nth-of-type(4)':['Musique','Music'],'.primary-nav>a:nth-of-type(5)':['Échecs','Chess'],'.primary-nav>a:nth-of-type(6)':['Enseignants','Teachers'],'.pathway-menu summary':['Parcours','Learning paths'],'.pathway-menu a:nth-child(1)':['Citoyenneté','Citizenship'],'.pathway-menu a:nth-child(2)':['Environnement','Environment'],'.pathway-menu a:nth-child(3)':['Ressources responsables','Responsible resources'],'.pathway-menu a:nth-child(4)':['Mboka Numérique','Digital Mboka'],
-  '.hero .eyebrow':['L’aventure commence ici','The adventure starts here'],'.hero h1':['La RDC comme tu ne l’as <em>jamais explorée.</em>','The DRC as you have <em>never explored it.</em>'],'.hero-copy>p':['Des rives du fleuve Congo aux sommets des Virunga, pars à la découverte d’un pays aux mille histoires.','From the Congo River to the Virunga peaks, discover a country with a thousand stories.'],'.hero-entry-points a:nth-child(1)':['Apprendre →','Learn →'],'.hero-entry-points a:nth-child(2)':['Jouer ★','Play ★'],'.hero-entry-points a:nth-child(3)':['Enseigner ✎','Teach ✎'],'.explore-more':['+ Explorer davantage','+ Explore more'],'.trust p':['<strong>Progression locale</strong><br>conservée sur cet appareil','<strong>Local progress</strong><br>kept on this device'],'.scroll-cue':['DÉFILE POUR EXPLORER ↓','SCROLL TO EXPLORE ↓'],
+  '.hero .eyebrow':['L’aventure commence ici','The adventure starts here'],'.hero h1':['La RDC comme tu ne l’as <em>jamais explorée.</em>','The DRC as you’ve <em>never explored it.</em>'],'.hero-copy>p':['Des rives du fleuve Congo aux sommets des Virunga, pars à la découverte d’un pays aux mille histoires.','From the Congo River to the peaks of the Virunga, discover a country of a thousand stories.'],'.hero-entry-points a:nth-child(1)':['Apprendre →','Learn →'],'.hero-entry-points a:nth-child(2)':['Jouer ★','Play ★'],'.hero-entry-points a:nth-child(3)':['Enseigner ✎','Teach ✎'],'.explore-more':['+ Explorer davantage','+ Explore more'],'.trust p':['<strong>Progression locale</strong><br>conservée sur cet appareil','<strong>Local progress</strong><br>kept on this device'],'.scroll-cue':['DÉFILE POUR EXPLORER ↓','SCROLL TO EXPLORE ↓'],
   '.daily-streak small':['SÉRIE ACTUELLE','CURRENT STREAK'],'.daily-label span':['✦ DÉCOUVERTE DU JOUR','✦ DAILY DISCOVERY'],'.week-heading small':['MES 7 DERNIERS JOURS','MY LAST 7 DAYS'],'.week-heading>span':['Objectif : 7 jours','Goal: 7 days'],
   '#explorer .section-heading .eyebrow':['Choisis ta route','Choose your path'],'#explorer h2':['Un pays, mille découvertes','One country, a thousand discoveries'],'#explorer .section-heading>p':['Chaque parcours contient des histoires courtes, des faits étonnants et des défis.','Every journey contains short stories, surprising facts and challenges.'],
   '#memory .eyebrow':['Jeu de mémoire','Memory game'],'#memory h2':['Les trésors<br>du Congo','Treasures<br>of the Congo'],'#memory .memory-copy>p':['Retourne les cartes et associe chaque trésor à sa signification. Trouve les six paires avec le moins de coups possible.','Turn over the cards and match each treasure with its meaning. Find all six pairs in as few moves as possible.'],
@@ -14,8 +14,44 @@ const uiCopy={
   '#profileTitle':['Kimi','Kimi'],'.profile-cover>span':['MON CARNET D’EXPLORATEUR','MY EXPLORER NOTEBOOK'],'.level-row small':['PROGRESSION GLOBALE','OVERALL PROGRESS'],'.profile-stats>div:nth-child(1) small':['MEILLEUR QUIZ','BEST QUIZ'],'.profile-stats>div:nth-child(2) small':['RECORD SPRINT','SPRINT RECORD'],'.profile-stats>div:nth-child(3) small':['PARCOURS','JOURNEYS'],'.badge-heading small':['MA COLLECTION','MY COLLECTION'],'.badge-heading h3':['Badges à débloquer','Badges to unlock'],'#printProgress':['Imprimer le rapport','Print report'],'#resetProgress':['Réinitialiser ma progression','Reset my progress']
 };
 Object.assign(uiCopy,{
-  '[data-guided-step="teach"] small':['TRANSMETTRE','TEACH'],'[data-guided-step="teach"] strong':['Générer une fiche d’exercices','Generate an exercise worksheet'],'[data-guided-step="teach"] p':['Transforme la découverte en fiche imprimable.','Turn the discovery into a printable worksheet.'],
-  '#mission .eyebrow':['POURQUOI MBOKA','WHY MBOKA'],'#missionTitle':['Connaître son pays.<br>Mieux construire demain.','Know your country.<br>Build a better tomorrow.'],'.mission-heading>p':['Mboka relie culture, apprentissage et outils numériques pour accompagner les jeunes et les éducateurs de la RDC.','Mboka connects culture, learning and digital tools to support young people and educators in the DRC.'],'.vision-card>span':['01 · VISION','01 · VISION'],'.vision-card h3':['Une jeunesse qui connaît et comprend son pays.','A generation that knows and understands its country.'],'.vision-card p':['Permettre à chaque jeune Congolais de découvrir la RDC, ses cultures et son environnement grâce à une éducation numérique accessible, inclusive et contextualisée.','Enable every young Congolese person to discover the DRC, its cultures and environment through accessible, inclusive and contextualised digital education.'],'.mission-card:nth-child(2)>span':['02 · MISSION','02 · MISSION'],'.mission-card:nth-child(2) h3':['Transformer la découverte en apprentissage.','Turn discovery into learning.'],'.mission-card:nth-child(2) p':['Proposer aux élèves et enseignants des contenus fiables, des activités éducatives et des outils simples pour apprendre, enseigner et mesurer les progrès.','Provide learners and teachers with reliable content, educational activities and simple tools to learn, teach and measure progress.'],'.commitment-list strong':['NOS ENGAGEMENTS','OUR COMMITMENTS'],'.commitment-list span:nth-of-type(1)':['Identité congolaise','Congolese identity'],'.commitment-list span:nth-of-type(2)':['Accès inclusif','Inclusive access'],'.commitment-list span:nth-of-type(3)':['Sécurité des enfants','Child safety'],'.commitment-list span:nth-of-type(4)':['Exactitude et validation','Accuracy and validation'],'.commitment-list span:nth-of-type(5)':['Impact mesurable','Measurable impact'],
+  // Guided path (Trois étapes)
+  '#guidedPath .eyebrow':['Parcours recommandé','Recommended path'],
+  '#guidedPathTitle':['Trois étapes pour commencer.','Three simple steps to get started.'],
+  '#guidedPath .guided-path-heading>p':['Une route simple pour découvrir Mboka sans devoir choisir parmi tous les modules.','A simple path to discover Mboka without having to choose between every module.'],
+  '[data-guided-step="learn"] small':['APPRENDRE','LEARN'],
+  '[data-guided-step="learn"] strong':['Découvrir un parcours','Discover a pathway'],
+  '[data-guided-step="learn"] p':['Choisis un thème et ouvre une première leçon.','Choose a theme and open your first lesson.'],
+  '[data-guided-step="play"] small':['JOUER','PLAY'],
+  '[data-guided-step="play"] strong':['Tester tes connaissances','Test your knowledge'],
+  '[data-guided-step="play"] p':['Réponds à dix questions adaptées à ton niveau.','Answer ten questions matched to your level.'],
+  '[data-guided-step="teach"] small':['TRANSMETTRE','TEACH'],
+  '[data-guided-step="teach"] strong':['Générer une fiche d’exercices','Generate an exercise sheet'],
+  '[data-guided-step="teach"] p':['Transforme la découverte en fiche imprimable.','Turn what you’ve learned into a printable worksheet.'],
+
+  // Pedagogical cards – common labels
+  '.activity-pedagogy-card strong':['FICHE PÉDAGOGIQUE','TEACHING NOTE'],
+  '.activity-pedagogy-card b:nth-of-type(1)':['Objectif :','Objective:'],
+  '.activity-pedagogy-card b:nth-of-type(2)':['Compétence :','Skill:'],
+  '.activity-pedagogy-card b:nth-of-type(3)':['Indicateur :','Indicator:'],
+  '.activity-pedagogy-card b:nth-of-type(4)':['Preuve :','Evidence:'],
+  '.activity-pedagogy-card b:nth-of-type(5)':['Statut :','Status:'],
+
+  // Mission / Vision (polished)
+  '#mission .eyebrow':['POURQUOI MBOKA','WHY MBOKA'],
+  '#missionTitle':['Connaître son pays.<br>Mieux construire demain.','Know your country.<br>Build a better tomorrow.'],
+  '.mission-heading>p':['Mboka relie culture, apprentissage et outils numériques pour accompagner les jeunes et les éducateurs de la RDC.','Mboka connects culture, learning and digital tools to support young people and educators in the DRC.'],
+  '.vision-card>span':['01 · VISION','01 · VISION'],
+  '.vision-card h3':['Une jeunesse qui connaît et comprend son pays.','A generation that knows and understands its country.'],
+  '.vision-card p':['Permettre à chaque jeune Congolais de découvrir la RDC, ses cultures et son environnement grâce à une éducation numérique accessible, inclusive et contextualisée.','Enable every young Congolese person to discover the DRC — its cultures, landscapes and environment — through accessible, inclusive and contextualised digital education.'],
+  '.mission-card:nth-child(2)>span':['02 · MISSION','02 · MISSION'],
+  '.mission-card:nth-child(2) h3':['Transformer la découverte en apprentissage.','Turn discovery into real learning.'],
+  '.mission-card:nth-child(2) p':['Proposer aux élèves et enseignants des contenus fiables, des activités éducatives et des outils simples pour apprendre, enseigner et mesurer les progrès.','Provide learners and teachers with reliable content, engaging activities and simple tools to learn, teach and track progress.'],
+  '.commitment-list strong':['NOS ENGAGEMENTS','OUR COMMITMENTS'],
+  '.commitment-list span:nth-of-type(1)':['Identité congolaise','Congolese identity'],
+  '.commitment-list span:nth-of-type(2)':['Accès inclusif','Inclusive access'],
+  '.commitment-list span:nth-of-type(3)':['Sécurité des enfants','Child safety'],
+  '.commitment-list span:nth-of-type(4)':['Exactitude et validation','Accuracy and validation'],
+  '.commitment-list span:nth-of-type(5)':['Impact mesurable','Measurable impact'],
   '#memoryCollectionLabel':['Collection','Collection'],'#memoryDifficultyLabel':['Difficulté','Difficulty'],
   '#quizModeLabel':['Mode','Mode'],'#quizTopicLabel':['Thème','Topic'],'#quizProvinceLabel':['Province','Province'],
   '.primary-nav>a:nth-of-type(7)':['Histoire','History'],
@@ -36,6 +72,29 @@ Object.assign(uiCopy,{
   '#mapSource':['Sources cartographiques : provinces — geoBoundaries COD ADM1, OpenStreetMap/Wambacher, ODbL 1.0; territoires — geoBoundaries COD ADM2, Référentiel Géographique Commun/OCHA RDC, CC BY 3.0 IGO. Catalogue recoupé avec la CAID et le PDL-145T. Limites indicatives à vocation pédagogique.','Map sources: provinces — geoBoundaries COD ADM1, OpenStreetMap/Wambacher, ODbL 1.0; territories — geoBoundaries COD ADM2, Common Geographic Repository/OCHA DRC, CC BY 3.0 IGO. Catalogue cross-checked with CAID and PDL-145T. Indicative boundaries for educational use.'],
   '#showProvinces':['26 provinces','26 provinces'],'#showTerritories':['145 territoires','145 territories'],'#territoryPicker span':['Choisir un territoire','Choose a territory'],'#territorySelect option':['Les 145 territoires…','The 145 territories…']
 });
+
+// Full English content for pedagogical cards (data-pedagogy-id 1..9)
+const pedagogyEn = {
+  1: `<strong>TEACHING NOTE</strong><span><b>Objective:</b> remember and explain one fact about the DRC.</span><span><b>Skill:</b> select information and restate it in your own words.</span><span><b>Indicator:</b> accurate reformulation without adding unverified information.</span><span><b>Evidence:</b> correct reformulation of the fact.</span><span><b>Status:</b> documented content · Mboka activity.</span>`,
+  2: `<strong>TEACHING NOTE</strong><span><b>Objective:</b> explore a theme and connect several facts.</span><span><b>Skill:</b> observe, compare and restate information.</span><span><b>Indicator:</b> at least three accurate observations restated.</span><span><b>Evidence:</b> lesson opened, facts reformulated and a question asked.</span><span><b>Status:</b> Mboka educational adaptation.</span>`,
+  3: `<strong>TEACHING NOTE</strong><div><span><b>Objective:</b> solve a contextualised problem by choosing a calculation strategy.</span><span><b>Skill:</b> use numbers, measurement and reasoning to justify a solution.</span><span><b>Indicator:</b> correct result and explained or verified method.</span><span><b>Evidence:</b> answer, intermediate calculations and result check.</span><span><b>Status:</b> Mboka educational adaptation · suitable for classroom use.</span></div>`,
+  4: `<strong>TEACHING NOTE</strong><div><span><b>Objective:</b> identify and reproduce a short musical sequence.</span><span><b>Skill:</b> listen, read and interpret simple notes.</span><span><b>Indicator:</b> correct sequence reproduced with guidance if needed.</span><span><b>Evidence:</b> performed sequence and verbal description of the notes.</span><span><b>Status:</b> Mboka educational adaptation · suitable for classroom use.</span></div>`,
+  5: `<strong>TEACHING NOTE</strong><div><span><b>Objective:</b> observe a position and choose a relevant move.</span><span><b>Skill:</b> analyse, calculate and explain a decision.</span><span><b>Indicator:</b> relevant move selected with a brief justification.</span><span><b>Evidence:</b> chosen move and short explanation of the idea.</span><span><b>Status:</b> Mboka educational adaptation · suitable for classroom use.</span></div>`,
+  6: `<strong>TEACHING NOTE</strong><span><b>Objective:</b> memorise and connect information about the DRC.</span><span><b>Skill:</b> observe, compare and recall elements.</span><span><b>Indicator:</b> pairs found with an explained strategy.</span><span><b>Evidence:</b> successful pairs and justification of one association.</span><span><b>Status:</b> Mboka educational adaptation.</span>`,
+  7: `<strong>TEACHING NOTE</strong><span><b>Objective:</b> locate a province and connect capital, landmark and context.</span><span><b>Skill:</b> read a map and compare territories.</span><span><b>Indicator:</b> province, capital and landmark correctly associated.</span><span><b>Evidence:</b> province profile opened and a comparison formulated.</span><span><b>Status:</b> Mboka educational adaptation.</span>`,
+  8: `<strong>TEACHING NOTE</strong><span><b>Objective:</b> match each province with its capital.</span><span><b>Skill:</b> use geographic landmarks under time pressure.</span><span><b>Indicator:</b> accurate answers and improved recall strategy.</span><span><b>Evidence:</b> score, answer streak and explained correction.</span><span><b>Status:</b> Mboka educational adaptation.</span>`,
+  9: `<strong>TEACHING NOTE</strong><span><b>Objective:</b> check and consolidate knowledge about the DRC.</span><span><b>Skill:</b> mobilise information and justify an answer.</span><span><b>Indicator:</b> score and correct explanation after each answer.</span><span><b>Evidence:</b> answers, final score and understood facts.</span><span><b>Status:</b> Mboka educational adaptation.</span>`
+};
+const pedagogyFrBackup = {};
+function localizePedagogyCards(lang){
+  document.querySelectorAll('[data-pedagogy-id]').forEach(card=>{
+    const id = card.getAttribute('data-pedagogy-id');
+    if(!pedagogyFrBackup[id]) pedagogyFrBackup[id] = card.innerHTML;
+    if(lang === 'en' && pedagogyEn[id]) card.innerHTML = pedagogyEn[id];
+    else if(pedagogyFrBackup[id]) card.innerHTML = pedagogyFrBackup[id];
+  });
+}
+
 const htmlSelectors=new Set(['.hero h1','.trust p','#memory h2','#provinces h2','#sprint h2','#enseignants h2','#pilot h2','#missionTitle']);
 function applyLanguage(lang){
   document.documentElement.lang=lang;localStorage.setItem('mbokaLang',lang);
@@ -50,6 +109,7 @@ function applyLanguage(lang){
   const memoryDifficulty=document.querySelector('#memoryDifficulty');if(memoryDifficulty){const labels=lang==='en'?['Beginner · 4 pairs','Intermediate · 6 pairs','Advanced · 8 pairs']:['Débutant · 4 paires','Intermédiaire · 6 paires','Avancé · 8 paires'];[...memoryDifficulty.options].forEach((option,index)=>option.textContent=labels[index])}
   document.querySelector('#profileButton').setAttribute('aria-label',lang==='en'?'Open my profile':'Ouvrir mon profil');
   if(typeof updateSpeechControls==='function')updateSpeechControls();
+  localizePedagogyCards(lang);
   localizeDynamic(lang);
 }
 let localizationBusy=false;

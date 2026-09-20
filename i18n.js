@@ -96,9 +96,41 @@ function localizePedagogyCards(lang){
 }
 
 const htmlSelectors=new Set(['.hero h1','.trust p','#memory h2','#provinces h2','#sprint h2','#enseignants h2','#pilot h2','#missionTitle']);
+
+// Minimal Lingala interface layer (key navigation & hero)
+const uiCopyLn = {
+  '.primary-nav>a:nth-of-type(1)':'Tala',
+  '.primary-nav>a:nth-of-type(2)':'Provense',
+  '.primary-nav>a:nth-of-type(3)':'Matematiki',
+  '.primary-nav>a:nth-of-type(4)':'Miziki',
+  '.primary-nav>a:nth-of-type(5)':'Echeki',
+  '.primary-nav>a:nth-of-type(6)':'Bayekoli',
+  '.pathway-menu summary':'Nzela ya koyekola',
+  '.hero .eyebrow':'Lisolo ebandi awa',
+  '.hero-entry-points a:nth-child(1)':'Koyekola →',
+  '.hero-entry-points a:nth-child(2)':'Kosakana ★',
+  '.hero-entry-points a:nth-child(3)':'Koyekolisa ✎',
+  '.explore-more':'+ Tala mingi',
+  '#guidedPathTitle':'Masolo misato mpo na kobanda.',
+  '[data-guided-step="learn"] small':'KOYEKOLA',
+  '[data-guided-step="play"] small':'KOSAKANA',
+  '[data-guided-step="teach"] small':'KOYEKOLISA',
+  '#mission .eyebrow':'PONA NINI MBOKA',
+  'footer>p:nth-of-type(1)':'Koyekola. Kotala. Kopesa.',
+  '#privacyLink':'Bomba ya ba sango'
+};
+
 function applyLanguage(lang){
   document.documentElement.lang=lang;localStorage.setItem('mbokaLang',lang);
-  Object.entries(uiCopy).forEach(([selector,copy])=>{const el=document.querySelector(selector);if(!el)return;if(htmlSelectors.has(selector))el.innerHTML=copy[lang==='en'?1:0];else el.textContent=copy[lang==='en'?1:0]});
+  Object.entries(uiCopy).forEach(([selector,copy])=>{
+    const el=document.querySelector(selector);if(!el)return;
+    let text;
+    if(lang==='ln' && uiCopyLn[selector]) text=uiCopyLn[selector];
+    else if(lang==='en') text=copy[1];
+    else text=copy[0];
+    if(htmlSelectors.has(selector)) el.innerHTML=text;
+    else el.textContent=text;
+  });
   const search=document.querySelector('#provinceSearch');search.placeholder=lang==='en'?'Search for a province…':'Chercher une province…';
   const comment=document.querySelector('#feedbackComment');if(comment)comment.placeholder=lang==='en'?'What you liked or what should change…':'Ce que tu as aimé ou ce qui devrait changer…';
   const school=document.querySelector('#pilotSchool');if(school)school.placeholder=lang==='en'?'E.g. SCHOOL-01':'Ex. ECOLE-01';
